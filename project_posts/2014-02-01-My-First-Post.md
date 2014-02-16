@@ -1,5 +1,4 @@
-Insert a description to describe your update to document your creative process. The Commissioned Interactive Artists will be doing the same so you can reference their Project Posts.
+This is a demo of our previous works. It help users to create a big interactive multitouch display.
 
-![Example Image](../project_images/cover.jpg?raw=true "Example Image")
 
-https://www.youtube.com/watch?v=30yGOxJJ2PQ
+http://www.youtube.com/watch?v=EVD1W2Evmb4
