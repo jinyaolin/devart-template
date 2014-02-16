@@ -4,10 +4,10 @@
             "insert apis"
         ],
         "platforms": [
-            "insert platforms"
+            "androids"
         ],
         "toolkits": [
-            "insert toolkits"
+            "nodejs"
         ]
     },
     "themes": [
