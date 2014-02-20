@@ -115,7 +115,7 @@ module.exports = function(grunt) {
 		uglify: {
 			my_target: {
 				files: {
-					"../../js/immatch.min.js": ["dist/immatch.js"]
+					"../../websocket-client/js/immatch.min.js": ["dist/immatch.js"]
 				},
 				options: {
 					preserveComments: false,
@@ -157,7 +157,7 @@ module.exports = function(grunt) {
 		copy: {
 			main: {
 				files: [
-					{expand: true, cwd:"../../js/", src: ["immatch.min.js"], dest: "<%= pkg.webServerDocuments %>/devart/js/"},
+					{expand: true, cwd:"../../websocket-client/js/", src: ["immatch.min.js"], dest: "<%= pkg.webServerDocuments %>/devart/js/"},
 				]
 			}
 		}

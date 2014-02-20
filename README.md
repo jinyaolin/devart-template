@@ -2,40 +2,65 @@
 
 We want to create a large interactive multitouch display by assemble many portable pads or mobiles. First, each kids would be asked to draw a man on a pad. And we would put them together and perform a stitch gesture to combine them into one big interactive screen. The draw men would start to dance with the music. With these portable pads we can bring the power of technology and art to the far far away place.
 
-## Tutorial of imMatch SDK
+## Tutorial
+
+
+### 1. Set up a web server
+
+If your machine cannot be a web server. Please visit [imMatch SDK Wiki](https://bitbucket.org/kf99916/immatch/) to get more details.
+
+### 2. Build imMatch SDK
+
+Please see [Tutorial of building imMatch SDK](Tutorial of building imMatch SDK) to get more details.
+
+### 3. Copy ```project_code/websocket-client/``` to your web document root
+
+### 4. Run imMatch web socket server
+
+```
+node project_code/websocket-server/immatch-ws-server.min.js
+```
+
+### 5. Enjoy it! :)
+
+## Tutorial of building imMatch SDK
 
 imMatch SDK is used in the project. The following tutorial is simple. Please visit [imMatch SDK Wiki](https://bitbucket.org/kf99916/immatch/) to get more details.
 
-### 1. Install [Grunt](http://gruntjs.com/)
+
+### 1. Go to imMatch SDK folder
 
 ```
-#!sh
+cd project_code/lib/immatch
+```
+
+### 2. INstall [Node.js](http://nodejs.org/)
+
+### 3. Install [Grunt](http://gruntjs.com/)
+
+```
 npm install -g grunt-cli
 ```
 
-Install [Node.js](http://nodejs.org/) if ```npm``` is not available.
-
-### 2. Modify IP address of your websocket server
+### 4. Modify IP address of your websocket server
 
 Replace "webSocketURL" with IP address of your websocket server at ```package.json```
 
-### 3. Modify web document root
+### 5. Modify web document root
 
-Replace "webServerDocuments" with the path of your web document root at ```package.json```
+Replace "webServerDocuments" with the path of your web document root at ```package.json```. The build command will can copy outputs to the root.
 
-### 4. Build imMatch
+### 6. Build imMatch
 
 ```
-#!sh
 cd immatch && npm run build
 ```
 
-- imMatch client library will be put in the ```project_code/js/```.
+- imMatch client library will be put in the ```project_code/websocket-client/js/```.
 - imMatch server build will be put in the  ```project_code/websocket-server/```.
 
 If you want to copy the build to the web server document root which you set, please execute the following command:
 
 ```
-#!sh
 cd immatch && npm run start
 ```
