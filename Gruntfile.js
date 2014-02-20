@@ -157,7 +157,7 @@ module.exports = function(grunt) {
 		copy: {
 			main: {
 				files: [
-					{expand: true, cwd:"project_code/websocket-client/js/", src: ["immatch.min.js"], dest: "<%= pkg.webServerDocuments %>/devart/js/"},
+					{expand: true, cwd:"project_code/websocket-client/**", src: ["immatch.min.js"], dest: "<%= pkg.webServerDocuments %>/devart/"},
 				]
 			}
 		}

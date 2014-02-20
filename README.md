@@ -47,7 +47,7 @@ npm install -g grunt-cli
 
 ### 4. Modify IP address of your websocket server
 
-Replace "webSocketURL" with IP address of your websocket server at ```package.json```
+Replace "webSocketURL" with IP address of your websocket server at ```package.json```. The default IP address is 127.0.0.1.
 
 ### 5. Modify web document root
 
