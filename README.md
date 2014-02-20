@@ -30,7 +30,8 @@ Replace "webServerDocuments" with the path of your web document root at ```packa
 cd immatch && npm run build
 ```
 
-The built version of imMatch will be put in the ```dist/```.
+- imMatch client library will be put in the ```project_code/js/```.
+- imMatch server build will be put in the  ```project_code/websocket-server/```.
 
 If you want to copy the build to the web server document root which you set, please execute the following command:
 
