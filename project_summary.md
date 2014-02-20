@@ -1,33 +1,23 @@
-# Project Title
-Insert the name of your project
+# Dance! Draw Men
+
 
 ## Authors
-- Insert main author name, surname, github account
-- Insert other author(s) name, surname, github account (one per list element)
+- Jinyao Lin
+- Chen-Xiang Ko
+- RuHan Wu
+- YuChun Chen
 
 ## Description
-Insert a description containing about 100 to 150 words, including your motivation and the meaning behind your idea and execution. The Judges will be keen to know how your idea pushes the boundaries of code and technology. 
+We want to create a large interactive multitouch display by assemble many portable pads or mobiles. First, each kids would be asked to draw a man on a pad. And we would put them together and perform a stitch gesture to combine them into one big interactive screen. The draw men would start to dance with the music. With these portable pads we can bring the power of technology and art to the far far away place.
 
 ## Link to Prototype
-NOTE: If your project lives online you can add one or more links here. Make sure you have a stable version of your project running before linking it.
+Under Construction
 
 [Example Link](http://www.google.com "Example Link")
 
-## Example Code
-NOTE: Wrap your code blocks or any code citation by using ``` like the example below.
-```
-function test() {
-  console.log("Printing a test");
-}
-```
+
 ## Links to External Libraries
  NOTE: You can also use this space to link to external libraries or Github repositories you used on your project.
 
-[Example Link](http://www.google.com "Example Link")
+[node.js](http://nodejs.org "node.js")
 
-## Images & Videos
-NOTE: For additional images you can either use a relative link to an image on this repo or an absolute link to an externally hosted image.
-
-![Example Image](project_images/cover.jpg?raw=true "Example Image")
-
-https://www.youtube.com/watch?v=30yGOxJJ2PQ
