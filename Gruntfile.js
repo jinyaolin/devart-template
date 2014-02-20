@@ -115,7 +115,7 @@ module.exports = function(grunt) {
 		uglify: {
 			my_target: {
 				files: {
-					"project_code/websocket-client/js/immatch.min.js": ["dist/immatch.js"]
+					"project_code/websocket-client/js/immatch.min.js": ["<%= pkg.srcDir %>/dist/immatch.js"]
 				},
 				options: {
 					preserveComments: false,
@@ -135,7 +135,7 @@ module.exports = function(grunt) {
 			},
 			my_advanced_target: {
 				files: {
-					"project_code/websocket-server/immatch-ws-server.min.js": ["dist/immatch-ws-server.js"]
+					"project_code/websocket-server/immatch-ws-server.min.js": ["<%= pkg.srcDir %>/dist/immatch-ws-server.js"]
 				},
 				options: {
 					preserveComments: false,

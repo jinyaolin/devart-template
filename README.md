@@ -21,7 +21,7 @@ cp project_code/websocket-client/** to WEB_DOCUMENT_ROOT/devart/
 ### 4. Run imMatch web socket server
 
 ```
-cd project_code && node websocket-server/immatch-ws-server.min.js
+node project_code/websocket-server/immatch-ws-server.min.js
 ```
 
 ### 5. Enjoy it! :)
@@ -56,7 +56,7 @@ Replace "webServerDocuments" with the path of your web document root at ```packa
 ### 6. Build imMatch
 
 ```
-cd immatch && npm run build
+npm run build
 ```
 
 - imMatch client library will be put in the ```project_code/websocket-client/js/```.
@@ -65,5 +65,5 @@ cd immatch && npm run build
 If you want to copy the build to the web server document root which you set, please execute the following command:
 
 ```
-cd immatch && sudo npm run start
+sudo npm run start
 ```
