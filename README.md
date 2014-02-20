@@ -15,7 +15,7 @@ npm install -g grunt-cli
 
 Install [Node.js](http://nodejs.org/) if ```npm``` is not available.
 
-### 2. Modify IP address of your websocket server ===
+### 2. Modify IP address of your websocket server
 
 Replace "webSocketURL" with IP address of your websocket server at ```package.json```
 
