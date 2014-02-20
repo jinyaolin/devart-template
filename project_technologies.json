@@ -4,13 +4,17 @@
             "Web Socket"
         ],
         "platforms": [
-            "Android"
+            "android"
         ],
         "toolkits": [
             "imMatch SDK",
-            "Node.js",
-            "jQuery",
+            "nodejs",
+            "jquery",
             "MobileESP"
+        ],
+        "Languages":[
+            "javascript",
+            "html"
         ]
     },
     "themes": [
