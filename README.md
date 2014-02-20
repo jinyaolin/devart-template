@@ -21,7 +21,7 @@ cp project_code/websocket-client/** to WEB_DOCUMENT_ROOT/devart/
 ### 4. Run imMatch web socket server
 
 ```
-cd project_code/lib/immatch && node project_code/websocket-server/immatch-ws-server.min.js
+cd project_code/lib/immatch && node ../../websocket-server/immatch-ws-server.min.js
 ```
 
 ### 5. Enjoy it! :)
