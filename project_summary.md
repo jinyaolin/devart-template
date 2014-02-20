@@ -17,7 +17,7 @@ Under Construction
 
 
 ## Links to External Libraries
- NOTE: You can also use this space to link to external libraries or Github repositories you used on your project.
-
-[node.js](http://nodejs.org "node.js")
-
+- [imMatch SDK](https://bitbucket.org/kf99916/immatch/ "imMatch SDK")
+- [node.js](http://nodejs.org "node.js")
+- [jQuery](http://jquery.com/ "jQuery")
+- [MobileESP](blog.mobileesp.com/ "MobileESP")
