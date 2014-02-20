@@ -15,13 +15,13 @@ Please see [Tutorial of building imMatch SDK](https://github.com/jinyaolin/devar
 ### 3. Copy source codes to your web document root
 
 ```
-cp project_code/websocket-client/** to WEB_DOCUMENT_ROOT/devart
+cp project_code/websocket-client/** to WEB_DOCUMENT_ROOT/devart/
 ```
 
 ### 4. Run imMatch web socket server
 
 ```
-node project_code/websocket-server/immatch-ws-server.min.js
+cd project_code/lib/immatch && node project_code/websocket-server/immatch-ws-server.min.js
 ```
 
 ### 5. Enjoy it! :)
@@ -37,7 +37,7 @@ imMatch SDK is used in the project. The following tutorial is simple. Please vis
 cd project_code/lib/immatch
 ```
 
-### 2. INstall [Node.js](http://nodejs.org/)
+### 2. Install [Node.js](http://nodejs.org/)
 
 ### 3. Install [Grunt](http://gruntjs.com/)
 
