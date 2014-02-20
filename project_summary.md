@@ -3,7 +3,7 @@
 
 ## Authors
 - Jinyao Lin
-- Chen-Xiang Ko
+- Zheng-Xiang Ke
 - RuHan Wu
 - YuChun Chen
 
