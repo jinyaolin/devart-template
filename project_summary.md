@@ -17,7 +17,7 @@ Under Construction
 
 
 ## Links to External Libraries
-- **[imMatch SDK](https://bitbucket.org/kf99916/immatch/ "imMatch SDK") ** *
-- **[node.js](http://nodejs.org "node.js") ** *
-- **[jQuery](http://jquery.com/ "jQuery") ** *
-- **[MobileESP](blog.mobileesp.com/ "MobileESP") ** *
+- [imMatch SDK](https://bitbucket.org/kf99916/immatch/ "imMatch SDK")
+- [node.js](http://nodejs.org "node.js")
+- [jQuery](http://jquery.com/ "jQuery")
+- [MobileESP](blog.mobileesp.com/ "MobileESP")
