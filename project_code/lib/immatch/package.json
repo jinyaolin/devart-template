@@ -1,0 +1,46 @@
+{
+  "name": "immatch",
+  "title": "imMatch",
+  "description": "SDK for screen stitching in multi-touch mobile devices",
+  "version": "1.0.0pre",
+  "homepage": "https://bitbucket.org/kf99916/immatch",
+  "webServerDocuments": "/Library/WebServer/Documents",
+  "author": {
+    "name": "Zheng-Xiang Ke (Kf Ke)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/kf99916/immatch.git"
+  },
+  "keywords": [
+    "immatch",
+    "screen stitching",
+    "javascript",
+    "library"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://bitbucket.org/kf99916/immatch/wiki/MIT%20LICENSE"
+    }
+  ],
+  "configurations": {
+    "webSocketURL": "\"ws://localhost:8080\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "load-grunt-tasks": "0.3.0",
+    "grunt-cli": "0.1.13",
+    "grunt-contrib-jshint": "0.8.0",
+    "grunt-contrib-uglify": "0.3.2",
+    "grunt-contrib-concat": "0.3.0",
+    "grunt-contrib-copy": "0.5.0",
+    "grunt-jsonlint": "1.0.4",
+    "grunt-regex-replace": "0.2.5",
+    "ws": "0.4.31"
+  },
+  "scripts": {
+    "build": "npm install && grunt",
+    "start": "npm install && grunt watch"
+  }
+}
