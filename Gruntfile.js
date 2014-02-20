@@ -53,29 +53,29 @@ module.exports = function(grunt) {
 				options: {
 					banner: "<%= meta.imMatch.banner %>"
 				},
-				src:["src/common/intro.js", 
-					"src/common/toolbox.js", 
-					"src/common/math-old.js", 
-					"src/common/class.js",
-					"src/websocket-client/3rd-party/color.js",
-					"src/websocket-client/3rd-party/mdetect.js",
-					"src/websocket-client/*.js",
-					"src/common/exports.js",
-					"src/common/outro.js"],
-				dest:"dist/immatch.js"
+				src:["<%= pkg.srcDir %>/src/common/intro.js", 
+					"<%= pkg.srcDir %>/src/common/toolbox.js", 
+					"<%= pkg.srcDir %>/src/common/math-old.js", 
+					"<%= pkg.srcDir %>/src/common/class.js",
+					"<%= pkg.srcDir %>/src/websocket-client/3rd-party/color.js",
+					"<%= pkg.srcDir %>/src/websocket-client/3rd-party/mdetect.js",
+					"<%= pkg.srcDir %>/src/websocket-client/*.js",
+					"<%= pkg.srcDir %>/src/common/exports.js",
+					"<%= pkg.srcDir %>/src/common/outro.js"],
+				dest:"<%= pkg.srcDir %>/dist/immatch.js"
 			},
 			imMatchWsServer: {
 				options: {
 					banner: "<%= meta.imMatchWsServer.banner %>"
 				},
-				src: ["src/common/intro-strict.js", 
-						"src/common/core.js",
-						"src/common/log.js",
-						"src/common/math.js",
-						"src/websocket-server/group.js",
-						"src/websocket-server/websocket-server.js",
-						"src/common/outro.js"],
-				dest: "dist/immatch-ws-server.js"
+				src: ["<%= pkg.srcDir %>/src/common/intro-strict.js", 
+						"<%= pkg.srcDir %>/src/common/core.js",
+						"<%= pkg.srcDir %>/src/common/log.js",
+						"<%= pkg.srcDir %>/src/common/math.js",
+						"<%= pkg.srcDir %>/src/websocket-server/group.js",
+						"<%= pkg.srcDir %>/src/websocket-server/websocket-server.js",
+						"<%= pkg.srcDir %>/src/common/outro.js"],
+				dest: "<%= pkg.srcDir %>/dist/immatch-ws-server.js"
 			}
 		},
 		jsonlint: {
@@ -86,7 +86,7 @@ module.exports = function(grunt) {
 		jshint: {
 			all: {
 				src: [
-					"src/**/*.js", "Gruntfile.js"
+					"<%= pkg.srcDir %>/src/**/*.js", "Gruntfile.js"
 				],
 				options: {
 					jshintrc: true
@@ -94,15 +94,15 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				src: [
-					"dist/immatch.js", 
-					"dist/immatch-ws-server.js"
+					"<%= pkg.srcDir %>/dist/immatch.js", 
+					"<%= pkg.srcDir %>/dist/immatch-ws-server.js"
 				],
 				options: srcHintOptions
 			}
 		},
 		"regex-replace": {
 			imMatch: {
-				src: ["dist/immatch.js"],
+				src: ["<%= pkg.srcDir %>/dist/immatch.js"],
 				actions: [
 					{
 						name: "WebSocket URL",
@@ -115,11 +115,11 @@ module.exports = function(grunt) {
 		uglify: {
 			my_target: {
 				files: {
-					"../../websocket-client/js/immatch.min.js": ["dist/immatch.js"]
+					"project_code/websocket-client/js/immatch.min.js": ["dist/immatch.js"]
 				},
 				options: {
 					preserveComments: false,
-					sourceMap: "dist/immatch.min.map",
+					sourceMap: "immatch.min.map",
 					sourceMappingURL: "immatch.min.map",
 					report: "min",
 					beautify: {
@@ -135,11 +135,11 @@ module.exports = function(grunt) {
 			},
 			my_advanced_target: {
 				files: {
-					"../../websocket-server/immatch-ws-server.min.js": ["dist/immatch-ws-server.js"]
+					"project_code/websocket-server/immatch-ws-server.min.js": ["dist/immatch-ws-server.js"]
 				},
 				options: {
 					preserveComments: false,
-					sourceMap: "dist/immatch-ws-server.min.map",
+					sourceMap: "immatch-ws-server.min.map",
 					sourceMappingURL: "immatch-ws-server.min.map",
 					report: "min",
 					beautify: {
@@ -157,7 +157,7 @@ module.exports = function(grunt) {
 		copy: {
 			main: {
 				files: [
-					{expand: true, cwd:"../../websocket-client/js/", src: ["immatch.min.js"], dest: "<%= pkg.webServerDocuments %>/devart/js/"},
+					{expand: true, cwd:"project_code/websocket-client/js/", src: ["immatch.min.js"], dest: "<%= pkg.webServerDocuments %>/devart/js/"},
 				]
 			}
 		}

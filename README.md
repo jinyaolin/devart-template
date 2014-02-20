@@ -21,7 +21,7 @@ cp project_code/websocket-client/** to WEB_DOCUMENT_ROOT/devart/
 ### 4. Run imMatch web socket server
 
 ```
-cd project_code/lib/immatch && node ../../websocket-server/immatch-ws-server.min.js
+cd project_code && node websocket-server/immatch-ws-server.min.js
 ```
 
 ### 5. Enjoy it! :)
@@ -31,10 +31,10 @@ cd project_code/lib/immatch && node ../../websocket-server/immatch-ws-server.min
 imMatch SDK is used in the project. The following tutorial is simple. Please visit [imMatch SDK Wiki](https://bitbucket.org/kf99916/immatch/) to get more details.
 
 
-### 1. Go to imMatch SDK folder
+### 1. Go to project directory
 
 ```
-cd project_code/lib/immatch
+cd devart-template
 ```
 
 ### 2. Install [Node.js](http://nodejs.org/)
@@ -65,5 +65,5 @@ cd immatch && npm run build
 If you want to copy the build to the web server document root which you set, please execute the following command:
 
 ```
-cd immatch && npm run start
+cd immatch && sudo npm run start
 ```

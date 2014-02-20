@@ -8,6 +8,7 @@
   "author": {
     "name": "Zheng-Xiang Ke (Kf Ke)"
   },
+  "srcDir": "project_code/lib/immatch",
   "repository": {
     "type": "git",
     "url": "https://bitbucket.org/kf99916/immatch.git"
