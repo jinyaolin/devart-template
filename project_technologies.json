@@ -1,7 +1,6 @@
 {
     "technologies": {
         "apis": [
-            "Web Socket"
         ],
         "platforms": [
             "android"
