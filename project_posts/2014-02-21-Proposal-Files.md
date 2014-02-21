@@ -1,4 +1,4 @@
-# Proposal Files (PDF_
+# Proposal Files (PDF)
 
 please download the proposal pdf.
 
