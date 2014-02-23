@@ -15,10 +15,10 @@ Please see [Tutorial of building imMatch SDK](https://github.com/jinyaolin/devar
 ### 3. Copy source codes to your web document root
 
 ```
-cp project_code/websocket-client/** to WEB_DOCUMENT_ROOT/devart/
+cp project_code/websocket-client/** WEB_DOCUMENT_ROOT/devart/
 ```
 
-### 4. Run imMatch web socket server
+### 4. Run imMatch websocket server
 
 ```
 node project_code/websocket-server/immatch-ws-server.min.js
@@ -47,11 +47,11 @@ npm install -g grunt-cli
 
 ### 4. Modify IP address of your websocket server
 
-Replace "webSocketURL" with IP address of your websocket server at ```package.json```. The default IP address is 127.0.0.1.
+Replace "webSocketURL" with IP address of your websocket server at ```package.json```. The default value is ```127.0.0.1```.
 
 ### 5. Modify web document root
 
-Replace "webServerDocuments" with the path of your web document root at ```package.json```. The build command will can copy outputs to the root.
+Replace "webServerDocuments" with the path of your web document root at ```package.json```. The default value is ```/Library/WebServer/Documents```. The build command - ```sudo npm run start``` - will can copy outputs to the root.
 
 ### 6. Build imMatch
 
